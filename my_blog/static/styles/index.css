@@ -55,7 +55,6 @@ body {
 
 .footer__links {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   list-style: none
@@ -97,9 +96,32 @@ body {
 
 .footer__description {
   color: var(--footer-font-color);
-  white-space: pre;
 }
 
 .footer__social-caption {
   color: #788088;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__description {
+    white-space: pre;
+  }
+
+  .footer__links {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__info {
+    flex-direction: column;
+  }
+
+  .footer__link {
+    margin-left: 10px;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
 }
