@@ -25,28 +25,30 @@
       {% endblock %}
     </section>
     <footer class="footer-container">
-      <div class="footer__info">
+      <div class="footer__content">
+        <div class="footer__info">
+          <span class="footer__logo">My Blog</span>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="{% url 'home' %}">Home</a></li>
+            <li><a class="footer__link" href="{% url 'home' %}">About</a></li>
+            <li><a class="footer__link" href="{% url 'home' %}">News</a></li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <p class="footer__social-caption">We in social networks:</p>
+          <ul class="footer__social-links">
+            <li class="footer__social-link"><a href="#twitter"><img src="{% static 'images/twitter.svg' %}" width="40"></img></a></li>
+            <li class="footer__social-link"><a href="#telegram"><img src="{% static 'images/telegram.svg' %}" width="40"></img></a></li>
+            <li class="footer__social-link"><a href="#facebook"><img src="{% static 'images/facebook.svg' %}" width="40"></img></a></li>
+            <li class="footer__social-link"><a href="#instagram"><img src="{% static 'images/instagram.svg' %}" width="40"></img></a></li>
+          </ul>
+        </div>
         <div class="footer__description">
           This is my first front + back experience, i wanted to try to create
           design, styles, logic and work with databases myself. Let's see
           where it will go...
           </select>
         </div>
-        <ul class="footer__links">
-          <li><span class="footer__logo">My Blog</span></li>
-          <li><a class="footer__link" href="{% url 'home' %}">Home</a></li>
-          <li><a class="footer__link" href="{% url 'home' %}">About</a></li>
-          <li><a class="footer__link" href="{% url 'home' %}">News</a></li>
-        </ul>
-      </div>
-      <div class="footer__socials">
-        <p class="footer__social-caption">We in social networks:</p>
-        <ul class="footer__social-links">
-          <li class="footer__social-link"><a href="#twitter"><img src="{% static 'images/twitter.svg' %}" width="40"></img></a></li>
-          <li class="footer__social-link"><a href="#telegram"><img src="{% static 'images/telegram.svg' %}" width="40"></img></a></li>
-          <li class="footer__social-link"><a href="#facebook"><img src="{% static 'images/facebook.svg' %}" width="40"></img></a></li>
-          <li class="footer__social-link"><a href="#instagram"><img src="{% static 'images/instagram.svg' %}" width="40"></img></a></li>
-        </ul>
       </div>
     </footer>
   </body>
