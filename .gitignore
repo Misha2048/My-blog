@@ -1,2 +1,5 @@
 /virtualenv/*
 /my_blog/staticfiles/*
+/my_blog/main/__pycache__/*
+/my_blog/main/migrations/*
+/my_blog/my_blog/__pycache__/*
